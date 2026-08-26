@@ -1,0 +1,14 @@
+Casks/keelhaven.rb
+  h_95e33fbd4ab2d9 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "535ac416a33ade0c0bd395c670405e7eb23b4b34",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
