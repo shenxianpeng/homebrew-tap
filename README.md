@@ -1,6 +1,6 @@
 # Keelapps Homebrew Tap
 
-Casks for [Keelapps](https://github.com/shenxianpeng) software.
+Homebrew casks for my Mac apps.
 
 ## Keelhaven
 
