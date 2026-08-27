@@ -2,14 +2,14 @@ cask "keelhaven" do
   version "0.3.1"
   sha256 "73d58f0c7f35ab7f7afcadd376b3bbcbdc67e85c9b4f4c12166c00f72330ceb6"
 
-  url "https://github.com/keelapps/keelhaven/releases/download/v#{version}/Keelhaven-#{version}.dmg",
-      verified: "github.com/keelapps/keelhaven/"
+  url "https://github.com/shenxianpeng/keelhaven/releases/download/v#{version}/Keelhaven-#{version}.dmg",
+      verified: "github.com/shenxianpeng/keelhaven/"
   name "Keelhaven"
   desc "Privacy-first backup menu bar app built on restic"
   homepage "https://keelhaven.app/"
 
   livecheck do
-    url "https://github.com/keelapps/keelhaven"
+    url "https://github.com/shenxianpeng/keelhaven"
     strategy :github_latest
   end
 
