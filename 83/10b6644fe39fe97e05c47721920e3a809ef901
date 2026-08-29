@@ -1,0 +1,19 @@
+Casks/keelhaven.rb
+  s_996692c72c618d::t_817e6f0180ee7c 20-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "8310b6644fe39fe97e05c47721920e3a809ef901",
+  "prompts": {},
+  "sessions": {
+    "s_996692c72c618d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6167a97b-3c9d-49f4-a832-05065685633e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
