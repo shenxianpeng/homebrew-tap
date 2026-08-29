@@ -17,6 +17,15 @@ cask "keelhaven" do
 
   app "Keelhaven.app"
 
+  # Beta builds are ad-hoc signed, not Apple-notarized, so a Homebrew download
+  # is quarantined and Gatekeeper would warn on first launch. Clearing the flag
+  # here is the same thing the curl|bash installer does — it keeps `brew
+  # install` frictionless. Drops out naturally once releases are notarized.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Keelhaven.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Keelhaven",
     "~/Library/Caches/com.keelhaven.Keelhaven",
@@ -24,10 +33,6 @@ cask "keelhaven" do
   ]
 
   caveats <<~EOS
-    Beta builds are not notarized by Apple, so macOS warns on first launch.
-    Allow it once: System Settings > Privacy & Security > Open Anyway
-    (macOS 15), or right-click the app > Open > Open (macOS 14).
-
     Repository passwords live in the macOS Keychain and are not removed by
     `brew uninstall --zap`.
   EOS
