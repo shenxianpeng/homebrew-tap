@@ -1,6 +1,6 @@
 cask "keelhaven" do
-  version "0.5.0"
-  sha256 "58cc95d0c1e9994bd9c1f4c40208877919ab14207223812a9d87e4eb311d1bec"
+  version "0.6.0"
+  sha256 "70ee5e353b1122255494ebae280125c708b29c93a8420e6ead2be5912f7337fe"
 
   url "https://github.com/shenxianpeng/keelhaven/releases/download/v#{version}/Keelhaven-#{version}.dmg",
       verified: "github.com/shenxianpeng/keelhaven/"
