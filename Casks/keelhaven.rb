@@ -5,7 +5,7 @@ cask "keelhaven" do
   url "https://github.com/shenxianpeng/keelhaven/releases/download/v#{version}/Keelhaven-#{version}.dmg",
       verified: "github.com/shenxianpeng/keelhaven/"
   name "Keelhaven"
-  desc "Privacy-first backup menu bar app built on restic"
+  desc "Privacy-first backups to storage you own"
   homepage "https://keelhaven.app/"
 
   livecheck do
